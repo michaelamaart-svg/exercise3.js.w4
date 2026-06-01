@@ -1,6 +1,5 @@
-// TODO: Create a global variable called globalCount
 let globalCount = 1;
-// TODO: Create a function that demonstrates local scope
+
 function localScope() {
     let localCount = 10;
     return localCount;
@@ -8,7 +7,6 @@ function localScope() {
 
 console.log(localScope());
 
-// TODO: Create a function that tries to modify both variables
 let a = 4;
 let b = 5;
 
@@ -21,12 +19,31 @@ modify();
 
 console.log(a); 
 console.log(b); 
-// TODO: Create a Student constructor function
+
 function Studentconstructor(name, age, grade) {
     this.name = name;
     this.age = age;
     this.grade = grade;
 }
-// TODO: Create several student instances
 
-// TODO: Create an object literal with nested properties
+class Student {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+let student1 = new Student("Samantha", 20);
+let student2 = new Student("Jordan", 19);
+let student3 = new Student("Mike", 21);
+
+let school = {
+    name: "ABC High School",
+    location: {
+        city: "Johannesburg",
+        province: "Gauteng"
+    }
+};
+
+console.log(student1);
+console.log(school.location.city);
